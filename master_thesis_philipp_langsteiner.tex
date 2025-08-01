@@ -1,0 +1,43 @@
+\documentclass[a4paper,cleardoublepage=empty,BCOR=1cm,parskip=half-]{scrbook}
+\input{header}
+
+\title{Thesis Template}
+\author{Philipp Langsteiner \thanks{e-mail: philipp.langsteiner@student.uni-tuebingen.de}}
+\date{\today}
+\begin{document}
+
+\input{teaser}
+
+\chapter*{Abstract}
+Template
+
+\chapter*{Acknowledgments}
+If you have someone to Acknowledge ;)
+
+\tableofcontents
+
+%% braucht kein Mensch ...
+%\listoffigures
+%\listoftables
+
+% write content here or...
+\chapter{Introduction}
+What is this all about?
+
+Cite like this: \cite{agarwal2011}
+
+\section{Problem Statement}
+\todo{what you have to do here :)}
+
+\Blinddocument
+
+% ... input content via other .tex files
+\input{content/conclusion}
+
+\appendix
+\chapter{Blub}
+
+\bibliography{bibliography}
+
+\end{document}
+
