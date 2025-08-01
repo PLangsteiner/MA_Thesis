@@ -1,0 +1,53 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.glo
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.maf
+*.mtc*
+*.nav
+*.nlo
+*.nls
+*.pdfsync
+*.run.xml
+*.snm
+*.synctex.gz
+*.thm
+*.xdv
+
+# Editors and system files
+*.swp
+*.bak
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+
+# Output files
+*.pdf
+*.dvi
+*.ps
+*.eps
+
+# Latexmk generated files
+latex.out
+latex.log
+latex.fls
+latex.fdb_latexmk
