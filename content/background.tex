@@ -1,0 +1,56 @@
+\chapter{Background}
+\label{chap:background}
+
+\section{Physically Based Rendering}
+- Rendering Equation
+- Path Tracing
+- Real-Time Rendering
+- Scene needs Geometry, materials, lights, and cameras
+
+\subsection{Scene Components}
+
+\paragraph{Materials}
+- Materials that are needed are Base Color, Roughness, Metallic
+
+\paragraph{Geometry}
+- Geometry is normally defined by a triangle mesh
+- Other representations are point clouds, implicit surfaces, and volumetric data
+- Gaussians can represent geometry by simulating a point cloud
+
+\paragraph{Lighting}
+- Point lights
+- Environment lights
+
+\paragraph{Cameras}
+- Pinhole Camera Model for synthetic data
+- Real-world cameras are more complex
+- Need to know the camera intrinsics and extrinsics for correct rendering
+
+\subsection{Bidirectional Reflectance Distribution Function}
+- BRDF is a function that describes the reflectance of a surface
+- Multiple BRDF models exist
+- Cook-Torrance BRDF is a popular model for physically based rendering in real-time
+
+\section{3D Reconstruction}
+
+- Trying to reconstruct a scene from multiple images from different views
+- Synthetic tasks are often a disconnected series of images
+- Real-world tasks are often videos, but are harder to reconstruct because of:
+    - Motion blur
+    - Occlusion
+    - Varying lighting
+    - Varying camera parameters
+    - Varying scene geometry
+    - Varying scene materials
+    - Varying scene lighting
+
+
+\subsection{Structure from Motion}
+
+\subsection{NeRF}
+
+\subsection{Gaussian Splatting}
+
+\subsection{Gaussian Ray Tracing}
+
+\section{Diffusion}

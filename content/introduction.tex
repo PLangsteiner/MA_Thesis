@@ -1,0 +1,41 @@
+\chapter{Introduction}
+\label{chap:introduction}
+\paragraph{Motivation}
+\begin{itemize}
+    \item Find an interesting object/scene for a game or a movie (e.g., Shopping Mall, Office, etc.)
+    \item Digitizing the object/scene allows for manipulating it as the user sees fit
+\end{itemize}
+
+\paragraph{Problem Description}
+\begin{itemize}
+    \item Current methods allow for accurate reconstruction of geometry and appearance under lighting conditions of the original scene
+    \item Fall short in relighting scenarios due to the lack of precise, spatially varying material parameters
+    \item To fully capture the object/scene, we need to have precise material parameters
+    \item Current 3D reconstruction methods allow for either accurate parameters for a single object or often inaccurate estimation of parameters for a scene
+    \item Biggest challenge in current methods are baked-in lighting conditions in material parameters
+\end{itemize}
+
+\paragraph{Contributions}
+\begin{itemize}
+    \item Advances in 2D material prediction allow for accurate prediction of material parameters
+    \item This thesis focuses on fusing 2D material data into 3D geometry using a combination of learning-based and projection-based approaches.
+    \item Learning-based approach learns the material parameters using image-based losses
+    \item Using a simple L1 loss, the predictions are compared to the current renders of the material
+    \item Projection-based approach projects the material parameters onto the 3D geometry using Gaussian ray tracing
+    \item Using ray-tracing from each view, the intersected Gaussians get assigned the material parameter directly
+    \item This allows for a much faster approach of applying the material parameters to each Gaussian
+    \item To enhance fine-scale accuracy, we further introduce a neural refinement step using a multilayer perceptron (MLP), which takes ray-traced material features as input and produces detailed adjustments.
+    \item This allows for a much more accurate approach of applying the material parameters to each Gaussian
+\end{itemize}
+
+\paragraph{Outline}
+\begin{itemize}
+    \item Chapter 2: Background
+    \item Chapter 3: Related Work
+    \item Chapter 4: Method
+    \item Chapter 5: Results
+    \item Chapter 6: Conclusion
+\end{itemize}
+
+
+
