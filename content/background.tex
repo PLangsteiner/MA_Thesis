@@ -44,13 +44,47 @@
     - Varying scene materials
     - Varying scene lighting
 
+- possibly history of 3D Reconstruction
 
 \subsection{Structure from Motion}
+- Structure from Motion is a way to create a 3D Point cloud by comparing images for reference points that they have in common
+- Most important Structure from Motion is Colmap
 
 \subsection{NeRF}
+- NeRF was one of the first Neural 3D Reconstruction methods
+- NeRF works by training a neural network to represent a 3D scene
+- It uses Volume Rendering to render the scene
+- NeRF pioneered neural scene representation and differentiable rendering, which Gaussian Splatting builds upon.
 
 \subsection{Gaussian Splatting}
+- Gaussian Splatting gave a huge boost to 3D Reconstruction because it was able to render the scene at a much higher frame rate than NeRF
+- Gaussian Splatting places 3D Gaussians in a scene and uses rasterization to render these Gaussians
+- Using an image based loss, the Gaussians are then optimized to fit the original images
+- With enough images this results in a high fidelity appearance reconstruction of the scene
+- Gaussian Splatting biggest advantage is that it is an explicit representation of the scene
 
 \subsection{Gaussian Ray Tracing}
+- Gaussian Ray Tracing uses Ray Tracing to render Gaussians
+- There are two main approaches to Gaussian Ray Tracing:
+    - Using volume rendering to render the Gaussians
+    - Using the point of most response to approximate the contribution of each Gaussian
+- The ray tracing approach allows for direct view sorting and projection of attributes to the Gaussians
+
+\section{Multilayer Perceptron}
+- A Multilayer Perceptron (MLP) is a type of artificial neural network that consists of multiple layers of neurons
+- Each neuron receives input from the previous layer and applies a weighted sum of the inputs to a non-linear activation function
+- The output of the last layer is the final prediction
+- MLPs are used in a variety of applications, including image classification, object detection, and natural language processing
+
+\paragraph{Softmax}
+- The Softmax function is a non-linear activation function that is used in the output layer of a Multilayer Perceptron
+- It gives a probability distribution for each output neuron
+- This can be used as a weighting function
 
 \section{Diffusion}
+- Diffusion models are generative models that learn to reverse a gradual noising process
+- They work by training a neural network to predict and remove noise from images step by step
+- The forward process gradually adds Gaussian noise to data over multiple timesteps
+- The reverse process learns to denoise by predicting the noise at each timestep
+- Diffusion models can generate high-quality images by starting from pure noise
+- They can be conditioned on text, images, or other modalities for controlled generation
